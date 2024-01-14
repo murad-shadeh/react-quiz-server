@@ -16,6 +16,7 @@ function Question(question, options, correctOption, points) {
 Question.allData = [];
 
 const homeHandler = (req, res) => {
+  Question.allData = [];
   questions.map(
     (questionItem) =>
       new Question(
