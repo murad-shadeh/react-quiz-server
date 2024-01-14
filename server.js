@@ -4,7 +4,7 @@ const cors = require("cors");
 const { questions } = require("./data/questions.json");
 const app = express();
 app.use(cors());
-console.log(questions);
+// console.log(questions);
 // constructor
 function Question(question, options, correctOption, points) {
   this.question = question;
